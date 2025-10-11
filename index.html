@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drone Defence Systems | Next-Gen Drone Security & Defense Technology</title>
+  <meta name="description" content="Discover cutting-edge drone surveillance, threat detection, and defense solutions designed to protect borders, assets, and people. Request a demo today." />
+  <meta name="keywords" content="drone defense, drone security, autonomous surveillance drones, military drone systems, AI defense technology" />
+  <meta property="og:title" content="Drone Defence Systems | Next-Gen Drone Security & Defense Technology" />
+  <meta property="og:description" content="Cutting-edge drone surveillance, threat detection, and defense solutions for border, infrastructure, and enterprise security." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Drone Defence Systems logo" class="logo" />
+        <h1>Drone Defence Systems</h1>
+      </div>
+      <nav class="primary" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#technology">Technology</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="mobile-toggle" id="mobileToggle">Menu</button>
+        <button class="cta-btn" id="demoBtn">Request Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h2>Command the Skies. Secure Every Frontier.</h2>
+        <p>Our next-generation drone security systems empower defense, surveillance, and border operations with precision intelligence and autonomous control.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="scrollToSection('contact')">Request a Demo</button>
+          <a class="btn-outline" href="#solutions">Explore Solutions</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero-placeholder.svg" alt="Drone in flight demonstration" />
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="section container">
+    <h2>Protecting What Matters with Advanced Aerial Intelligence</h2>
+    <p>At Drone Defence Systems, we combine cutting-edge technology with mission-ready expertise to safeguard nations, infrastructure, and enterprises from evolving aerial threats.</p>
+  </section>
+
+  <section id="solutions" class="section container">
+    <h2>Tailored Drone Solutions for Modern Security Challenges</h2>
+    <div class="grid cards-4">
+      <div class="card"><h4>Surveillance & Recon</h4><p>Autonomous drones for border, facility, and perimeter monitoring.</p></div>
+      <div class="card"><h4>Threat Detection</h4><p>AI-powered analytics identify and classify aerial threats in real time.</p></div>
+      <div class="card"><h4>Counter-Drone Systems</h4><p>Integrated detection and neutralization to protect sensitive airspace.</p></div>
+      <div class="card"><h4>Data Intelligence</h4><p>Cloud dashboards and live visualization for unified command & control.</p></div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h3>Empower Your Security with Next-Gen Drone Tech.</h3>
+    <button class="btn-primary" onclick="scrollToSection('contact')">Schedule a Consultation</button>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Let’s Secure the Skies Together</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" name="name" placeholder="Full name" required>
+      <input type="email" id="email" name="email" placeholder="Email address" required>
+      <textarea id="message" name="message" placeholder="Tell us about your mission" required></textarea>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer><p>© 2025 Drone Defence Systems. All rights reserved.</p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
