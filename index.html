@@ -262,22 +262,28 @@
                     </h2>
                 </div>
                 
-                <form class="space-y-6 bg-slate-900 p-8 rounded-xl shadow-2xl border border-indigo-500/30">
+                <form class="space-y-6 bg-slate-900 p-8 rounded-xl shadow-2xl border border-indigo-500/30" 
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSckvD5jlx-qXiJTEPKQC0TWj7kjFqQ4Idpzv5G3W1chIFAxZA/formResponse" 
+                    method="POST" target="_self">
                     <div>
-                        <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Full Name</label>
-                        <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
+                        <label for="full-name" class="block text-sm font-medium text-slate-300 mb-1">Full Name</label>
+                        <input type="text" name="entry.1001246262" id="full-name"
+                            required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Work Email</label>
-                        <input type="email" id="email" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
+                        <label for="work-email" class="block text-sm font-medium text-slate-300 mb-1">Work Email</label>
+                        <input type="email" name="entry.1436704820" id="work-email"
+                            required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
                     </div>
                     <div>
                         <label for="company" class="block text-sm font-medium text-slate-300 mb-1">Company/Organization</label>
-                        <input type="text" id="company" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
+                        <input type="text" id="company" name="entry.950020879"
+                            required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition">
                     </div>
                     <div>
-                        <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Inquiry Details</label>
-                        <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition"></textarea>
+                        <label for="details" class="block text-sm font-medium text-slate-300 mb-1">Inquiry Details</label>
+                        <textarea rows="4" name="entry.636288415" id="details"
+                            required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:ring-cyan-500 focus:border-cyan-500 transition"></textarea>
                     </div>
                     
                     <button type="submit" class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg shadow-md text-white bg-cyan-600 hover:bg-cyan-700 transition duration-300">
