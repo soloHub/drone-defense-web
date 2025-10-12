@@ -27,13 +27,24 @@
             background-clip: text;
             color: transparent;
         }
-        /* High-tech grid background effect */
-        .hero-grid {
-            background-image: linear-gradient(0deg, var(--dark-background) 0%, transparent 100%),
-                              linear-gradient(45deg, rgba(0, 225, 255, 0.1) 1px, transparent 1px),
-                              linear-gradient(-45deg, rgba(0, 225, 255, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            background-position: 0 0;
+
+        .hero-video-container {
+            /* This ensures the video covers the full area of the section */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0; /* Keep it behind the content */
+        }
+
+        .hero-video {
+            /* These properties ensure the video is responsive and covers the container */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2; /* Adjust opacity as needed */
         }
     </style>
 </head>
@@ -84,11 +95,21 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-grid pt-20 pb-24 lg:pt-32 lg:pb-40 text-center relative overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <!-- Abstract drone/data visualization graphic -->
-                <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0F172A/00E1FF?text=Autonomous+Drone+Network'); filter: blur(10px);"></div>
+        <section id="hero" class="pt-20 pb-24 lg:pt-32 lg:pb-40 text-center relative overflow-hidden bg-slate-900">     
+            <div class="hero-video-container">
+                <video 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline 
+                    poster="drone-fallback.jpg" 
+                    class="hero-video"
+                >
+                    <source src="drone_over_site.mp4" type="video/mp4">
+                    <img src="drone.jpg" alt="Drone Surveillance Background" class="hero-video">
+                </video>
             </div>
+
             <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-white">
                     <span class="text-gradient block">Autonomous Intelligence.</span>
@@ -205,14 +226,14 @@
                     <!-- Visual Mockup (Placeholder for data visualization) -->
                     <div class="hidden lg:block relative p-6 bg-slate-900 rounded-xl shadow-2xl shadow-cyan-500/10 border border-cyan-700/40">
                         <!-- Simulated Command Dashboard -->
-                        <div class="aspect-video bg-black rounded-lg p-4 relative overflow-hidden">
+                        <div class="aspect-video bg-black rounded-lg p-4 relative overflow-hidden opacity-50">
                             <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #00E1FF 1px, transparent 1px); background-size: 20px 20px;"></div>
                             <div class="text-cyan-400 text-xs font-mono mb-2 flex justify-between">
                                 <span>STATUS: OPERATIONAL | SECTOR ALPHA</span>
                                 <span>LATENCY: 0.04ms</span>
                             </div>
                             <div class="w-full h-40 bg-slate-900 border border-cyan-800 rounded-md flex items-center justify-center mb-4">
-                                <p class="text-slate-600">-- Live Feed Placeholder --</p>
+                                <div class="w-full h-full bg-cover bg-center" style="background-image: url('srn.png'); filter: blur(0px);"></div>
                             </div>
                             <div class="grid grid-cols-3 gap-2">
                                 <div class="bg-indigo-900/50 p-3 rounded-lg text-center">
